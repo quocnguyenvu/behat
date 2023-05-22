@@ -1,0 +1,13 @@
+default:
+  extensions:
+    Behat\MinkExtension:
+      base_url: http://localhost:8000
+      sessions:
+        default:
+          laravel: ~
+        javascript:
+          selenium2:
+            browser: chrome
+            wd_host: "http://localhost:9515"
+          window_size: 1400x900
+      goutte: ~
